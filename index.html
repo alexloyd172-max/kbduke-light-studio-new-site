@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Базовая кодировка и адаптивная мета-настройка для корректного отображения на всех устройствах. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO-метаданные главной страницы. -->
+    <title>KBDUKE | Световой дизайн и технический продакшн для концертных шоу</title>
+    <meta
+      name="description"
+      content="KBDUKE: световой дизайн, сценография, технический продакшн, IMAG и контент для концертных шоу, туров, фестивалей и больших событий."
+    />
+
+    <!-- Подключение шрифтов для заголовков и основного текста. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Основные стили страницы. -->
+    <link rel="stylesheet" href="./styles.css?v=20260403-7" />
+
+    <!-- Структурированные данные для организации и hero-video. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "KBDUKE",
+            "url": "https://kbduke.ru/",
+            "email": "info@kbduke.ru",
+            "telephone": "+7-964-552-1264",
+            "sameAs": ["https://www.instagram.com/k_b_duke", "https://t.me/kbduke"]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="page-home">
+    <!-- Skip-link улучшает навигацию с клавиатуры и ускоряет переход к содержимому. -->
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <!-- Фоновый декоративный слой удерживает общий монохромный характер интерфейса. -->
+    <div class="ambient-bg" aria-hidden="true"></div>
+
+    <!-- Фиксированная шапка с логотипом и навигацией по ключевым экранам. -->
+    <header class="topbar" id="top">
+      <div class="container topbar__inner">
+        <a class="brand" href="#hero" aria-label="Перейти к началу страницы">
+          <img class="brand__logo" src="./assets/brand/logo-main.webp" alt="Логотип KBDUKE" loading="eager" />
+        </a>
+
+        <!-- Кнопка мобильного меню активна только на узких экранах. -->
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Якорная навигация соответствует новой продающей структуре страницы. -->
+        <nav class="menu" aria-label="Основная навигация">
+          <a href="./pages/capabilities.html">Возможности</a>
+          <a href="./pages/approach.html">Подход</a>
+          <a href="./pages/cases.html">Кейсы</a>
+          <a href="./pages/about.html">О нас</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основное содержимое страницы. -->
+    <main id="main">
+      <!-- Первый экран с оффером, showreel и основными CTA. -->
+      <section id="hero" class="section hero reveal">
+        <div class="hero__media" aria-hidden="true">
+          <div class="hero__slides" id="heroSlides"></div>
+          <div class="hero__veil"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Клиентский JavaScript отвечает за фильтры, лайтбокс и reduced-motion. -->
+    <script src="./assets/cases/portfolio-data.js?v=20260403-newcases-5"></script>
+    <script src="./script.js?v=20260403-newcases-3"></script>
+  </body>
+</html>

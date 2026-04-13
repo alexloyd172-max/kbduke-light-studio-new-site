@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBDUKE | Кейсы</title>
+    <meta name="description" content="Кейсы KBDUKE: артисты, туры, фестивали и специальные проекты." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260403-7" />
+  </head>
+  <body class="page-cases">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="ambient-bg" aria-hidden="true"></div>
+    <header class="topbar" id="top">
+      <div class="container topbar__inner">
+        <a class="brand" href="../index.html" aria-label="Перейти на главную страницу">
+          <img class="brand__logo" src="../assets/brand/logo-main.webp" alt="Логотип KBDUKE" loading="eager" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="menu" aria-label="Основная навигация">
+          <a href="./capabilities.html">Возможности</a>
+          <a href="./approach.html">Подход</a>
+          <a href="./cases.html" aria-current="page">Кейсы</a>
+          <a href="./about.html">О нас</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section section--portfolio reveal">
+        <div class="container">
+          <div class="section-heading">
+            <h1>Кейсы</h1>
+            <p class="lead lead--phrases">
+              <span class="phrase-lock">Фестивали</span>
+              <span class="phrase-lock">Концерты</span>
+              <span class="phrase-lock">Выставки</span>
+              <span class="phrase-lock">Премии</span>
+              <span class="phrase-lock">Конференции</span>
+              <span class="phrase-lock">Телевидение</span>
+              <span class="phrase-lock">Театр</span>
+              <span class="phrase-lock">Модные показы</span>
+              <span class="phrase-lock">Частные мероприятия</span>
+              <span class="phrase-lock">Инсталляции</span>
+              <span class="phrase-lock">Государственные праздники РФ</span>
+            </p>
+          </div>
+          <div class="portfolio-grid" id="portfolioGrid"></div>
+        </div>
+      </section>
+    </main>
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox__close" type="button" aria-label="Закрыть просмотр">×</button>
+      <div class="lightbox__stage">
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Предыдущее фото">‹</button>
+        <img class="lightbox__image" src="" alt="Увеличенное изображение кейса" />
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Следующее фото">›</button>
+      </div>
+      <div class="lightbox__thumbs" id="lightboxThumbs" aria-label="Миниатюры фото проекта"></div>
+      <div class="lightbox__meta">
+        <p class="lightbox__eyebrow" id="lightboxCategory"></p>
+        <p class="lightbox__caption"></p>
+        <p class="lightbox__description" id="lightboxDescription"></p>
+      </div>
+    </dialog>
+    <script src="../assets/cases/portfolio-data.js?v=20260403-newcases-5"></script>
+    <script src="../script.js?v=20260403-newcases-3"></script>
+  </body>
+</html>
