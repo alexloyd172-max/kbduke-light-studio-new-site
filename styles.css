@@ -626,6 +626,41 @@ p {
   hyphens: none;
 }
 
+.page-capabilities .capability-label--link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(244, 247, 252, 0.98);
+  text-decoration: none;
+  transition: color 0.22s ease, transform 0.22s ease, opacity 0.22s ease;
+}
+
+.page-capabilities .capability-label--link:hover,
+.page-capabilities .capability-label--link:focus-visible {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.page-capabilities .capability-label--link:focus-visible {
+  outline: none;
+}
+
+.page-capabilities .capability-link-meta {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  color: rgba(244, 247, 252, 0.52);
+  font-size: 0.66em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-capabilities .capability-label--link:hover .capability-link-meta,
+.page-capabilities .capability-label--link:focus-visible .capability-link-meta {
+  color: rgba(244, 247, 252, 0.82);
+}
+
 @media (max-width: 1180px) {
   .page-capabilities .capabilities--static {
     --capabilities-column-gap: clamp(44px, 4vw, 64px);
@@ -707,6 +742,12 @@ p {
 
   .page-capabilities .capability-label {
     max-width: none;
+  }
+
+  .page-capabilities .capability-label--link {
+    gap: 10px;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 
@@ -2637,6 +2678,11 @@ p {
     max-width: none;
     font-size: 1.28rem;
     line-height: 1.28;
+  }
+
+  .page-capabilities .capability-link-meta {
+    font-size: 0.62em;
+    letter-spacing: 0.12em;
   }
 
   .portfolio-grid {
