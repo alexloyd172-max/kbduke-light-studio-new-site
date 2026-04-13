@@ -1,5 +1,37 @@
 window.KBDUKE_PORTFOLIO_ITEMS = [
   {
+    "id": "project-11",
+    "imageId": "project-11",
+    "slide": "11",
+    "category": "projects",
+    "categoryLabel": "Проекты",
+    "title": "Akmal' (Акмаль) - большой сольный концерт в VK Stadium (Москва), 7 марта 2026",
+    "sourceTitle": "Akmal' (Акмаль) - большой сольный концерт в VK Stadium (Москва), 7 марта 2026",
+    "tags": [],
+    "cardText": "дизайн сцены, световой дизайн, IMAG",
+    "description": "дизайн сцены, световой дизайн, IMAG",
+    "galleryImageIds": [
+      "project-11"
+    ],
+    "sortIndex": 0
+  },
+  {
+    "id": "project-12",
+    "imageId": "project-12",
+    "slide": "12",
+    "category": "projects",
+    "categoryLabel": "Проекты",
+    "title": "«Мисс БРИКС — 2026» - первый международный конкурс красоты в «Казань Экспо» (Казань), 2 и 7 марта 2026",
+    "sourceTitle": "«Мисс БРИКС — 2026» - первый международный конкурс красоты в «Казань Экспо» (Казань), 2 и 7 марта 2026",
+    "tags": [],
+    "cardText": "световой дизайн",
+    "description": "световой дизайн",
+    "galleryImageIds": [
+      "project-12"
+    ],
+    "sortIndex": 0.5
+  },
+  {
     "id": "project-01",
     "imageId": "project-01",
     "slide": "1",

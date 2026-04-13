@@ -246,7 +246,7 @@ const sortedPortfolioItems = externalPortfolioItems
 /* Утилита формирования путей к отдельным изображениям кейсов.                */
 /* -------------------------------------------------------------------------- */
 const assetBase = window.location.pathname.includes("/pages/") ? "../assets" : "./assets";
-const assetVersion = "20260403-newcases-3";
+const assetVersion = "20260413-newcases-2";
 
 const imagePath = {
   thumb: (imageId) => `${assetBase}/cases/thumb/${imageId}.webp?v=${assetVersion}`,
@@ -255,6 +255,8 @@ const imagePath = {
 };
 
 const heroSlideItems = [
+  { title: "Akmal' (Акмаль)", imageId: "home-11" },
+  { title: "«Мисс БРИКС — 2026»", imageId: "home-12" },
   { title: "80-летие Победы", imageId: "home-01" },
   { title: "GONE.Fludd", imageId: "home-02" },
   { title: "Tyga", imageId: "home-03" },
